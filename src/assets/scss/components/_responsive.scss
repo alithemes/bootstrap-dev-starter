@@ -1,0 +1,30 @@
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media screen and (max-width: 1399.98px) {
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media screen and (max-width: 1199.98px) {
+}
+// `lg` applies to medium devices (tablets, less than 992px)
+@media screen and (max-width: 991.98px) {
+}
+// `md` applies to small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) {
+}
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media screen and (max-width: 575.98px) {
+}
+// `xs` applies to x-small devices (portrait phones, less than 475px)
+@media screen and (max-width: 474.98px) {
+}
+// `lg` applies to medium devices (PC, bigger than 992px)
+@media screen and (min-width: 992px) {
+    .pe-lg-10 {
+        padding-right: 6rem !important;
+    }
+    .ps-lg-4 {
+        padding-left: 1.5rem !important;
+    }
+    .ms-lg-8 {
+        margin-left: 4rem !important;
+    }
+}

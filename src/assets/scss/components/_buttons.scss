@@ -1,0 +1,69 @@
+.btn-primary {
+	--bs-btn-color: var(--tc-neutral-0);
+	--bs-btn-bg: var(--tc-theme-primary);
+	--bs-btn-border-color: var(--tc-theme-primary);
+	--bs-btn-hover-color: var(--tc-neutral-0);
+	--bs-btn-hover-bg:  var(--tc-theme-primary-dark);
+	--bs-btn-hover-border-color: var(--tc-theme-primary-dark);
+	--bs-btn-focus-shadow-rgb: 49,132,253;
+	--bs-btn-active-color: var(--tc-neutral-0);
+	--bs-btn-active-bg: var(--tc-theme-primary-dark);
+	--bs-btn-active-border-color: var(--tc-theme-primary-dark);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--tc-neutral-0);
+	--bs-btn-disabled-bg: var(--tc-theme-primary);
+	--bs-btn-disabled-border-color: var(--tc-theme-primary);
+}
+/*Scroll to top*/
+.btn-scroll-top {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0.1rem rgba(227, 229, 233, 0.25);
+    z-index: 1010;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition:
+        all 0.2s linear,
+        margin-right 0s;
+    background-color: var(--tc-neutral-0);
+    &:after {
+        position: absolute;
+        font-family: 'bootstrap-icons' !important;
+        content: '\F145';
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        color: var(--tc-theme-primary);
+        left: 0;
+        top: 0;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        transition: all 0.2s linear;
+    }
+    &.active-progress {
+        visibility: visible;
+        transform: translateY(0);
+        @media (min-width: 320px) {
+            opacity: 1;
+        }
+    }
+    & svg path {
+        fill: none;
+    }
+    & svg.progress-square path {
+        stroke: var(--tc-theme-primary);
+        stroke-width: 2;
+        box-sizing: border-box;
+        transition: all 0.2s linear;
+    }
+}
