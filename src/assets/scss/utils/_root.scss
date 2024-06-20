@@ -22,7 +22,7 @@
     //@Color Declaration
     @each $color, $shades in $colors {
         @each $shade, $value in $shades {
-            --tc-#{$color}-#{$shade}: #{$value};
+            --tc-#{$color}-#{"" + $shade}: #{$value};
         }
     }
     //@Font Weight Declaration
